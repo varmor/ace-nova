@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block title %} Registration {% endblock%}
+
+
+{% block body %}
+<main class="container">
+  <p class="h1"> Registration </p>
+  <form class="row g-3" action="#" method="POST">
+    <div class="col-md-4">
+      <label for="first-name" class="form-label">First Name</label>
+      <input type="text" class="form-control " name="first-name"  required>
+    </div>
+    <div class="col-md-4">
+      <label for="last-name" class="form-label">Last Name</label>
+      <input type="text" class="form-control " name="last-name"  required>
+    </div>
+    <div class="col-md-4">
+      <label for="email" class="form-label">Email</label>
+      <input type="text" class="form-control" name="email"  required>
+    </div>
+    <div class="col-md-4">
+      <label for="department" class="form-label">Department</label>
+      <select class="form-select" name="department" required>
+        <option selected disabled value="">Choose...</option>
+        <option>Artificial Intelligence</option>
+        <option>Data Science</option>
+        <option>BBA</option>
+        <option>Mechanical</option>
+        <option>Civil</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="year" class="form-label">Year</label>
+      <select class="form-select" name="year" required>
+        <option selected disabled value="">Choose...</option>
+        <option>First Year</option>
+        <option>Second Year</option>
+        <option>Third Year</option>
+        <option>Fourth Year</option>
+      </select>
+    </div>
+    <div class="col-md-4">
+      <label for="phone-no" class="form-label">Phone No</label>
+      <input type="text" class="form-control   " name="phone-no" required>
+    </div>
+    <div class="col-12">
+      <p class="h3">Mentor Preference </p>
+    </div>
+    <div class="col-md-4">
+      <label for="preference1" class="form-label">Preference No 1</label>
+      <select class="form-select" name="preference1" required>
+        <option selected disabled value="">Choose...</option>
+        <option>TM Varun More</option>
+        <option>TM Padmaj Nikkam</option>
+        <option>TM Pratham Waydande</option>
+        <option>TM Sanchit Chemate</option>
+        <option>TM Astha Singh</option>
+        <option>TM Rajeshree Bhagwat</option>
+      </select>
+    </div>
+      <div class="col-md-4">
+        <label for="preference2" class="form-label">Preference No 2</label>
+        <select class="form-select" name="preference2" required>
+          <option selected disabled value="">Choose...</option>
+          <option>TM Varun More</option>
+          <option>TM Padmaj Nikkam</option>
+          <option>TM Pratham Waydande</option>
+          <option>TM Sanchit Chemate</option>
+          <option>TM Astha Singh</option>
+          <option>TM Rajeshree Bhagwat</option>
+        </select>
+      </div>
+        <div class="col-md-4">
+          <label for="preference3" class="form-label">Preference No 3</label>
+          <select class="form-select" name="preference3" required>
+            <option selected disabled value="">Choose...</option>
+            <option>TM Varun More</option>
+            <option>TM Padmaj Nikkam</option>
+            <option>TM Pratham Waydande</option>
+            <option>TM Sanchit Chemate</option>
+            <option>TM Astha Singh</option>
+            <option>TM Rajeshree Bhagwat</option>
+          </select>
+          </div>
+          <div class="col-md-4">
+            <label for="passcode" class="form-label">PassCode</label>
+            <input type="text" class="form-control" name="passcode"  required>
+    <div class="col-12 my-2">
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+  </form>
+
+</main>
+
+{% endblock %}
