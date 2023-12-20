@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask , url_for
 
 server = Flask(__name__)
 server.config['SECRET_KEY'] = "THESAILORSOFMENTALPEACE"
