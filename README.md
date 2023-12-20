@@ -36,15 +36,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 5. Set Environment Variables
-
-Copy the `.env.example` file to `.env` and update the variables as needed.
-
-```bash
-cp .env.example .env
-```
-
-### 6. Run the Application
+### 5. Run the Application
 
 ```bash
 python app.py
